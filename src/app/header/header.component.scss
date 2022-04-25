@@ -1,0 +1,123 @@
+header {
+    height: 80px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    .header-logo {
+        color: white;
+        text-decoration: none;
+        margin-left: 32px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        margin-left: 32px;
+        font-weight: 500;
+    }
+
+    .dropdown {
+        display: none;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 10px;
+
+        .fullscreen-link {
+            margin-left: 54px;
+        }
+        &:hover {
+            color: #fa2759;
+        }
+
+        &:active {
+            color: #fa2759;
+        }
+    }
+}.drop-down{
+    display: none;
+}
+
+img {
+    height: 55px;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+@media (max-width: 500px) {
+    header {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .dropdown {
+            height: 30px;
+            display: flex;
+        }
+
+        .links {
+            display: none;
+            flex-direction: column;
+        }
+
+        .link {
+            background: none;
+            border: none;
+            text-decoration: none;
+            font-family: inherit;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            left: 0;
+            top: calc(100% + 0.25rem);
+            background-color: white;
+            padding: 0.74rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+            opacity: 0.5;
+            pointer-events: none;
+            opacity : 0.8;
+        }
+    }
+
+    .dropdown > .link:focus + .dropdown-menu {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .d-flex{
+        display: flex !important;
+    }
+
+    .drop-down {
+        display: none;
+        top: 80px;
+        right: 2px;
+        position: absolute;
+        background: black;
+        flex-direction: column;
+        border: 1px solid #fa2759;
+        opacity: 0.95;
+
+    }
+    .responsiv-link{
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

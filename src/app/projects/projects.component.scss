@@ -1,0 +1,75 @@
+.projects-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        font-size: 32px;
+        color: white;
+    }
+
+    button {
+        height: 65px;
+        width: 120px;
+        border: 2px solid #fa2759;
+        color: white;
+        background: none;
+        font-size: 18px;
+        margin: 3px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fa2759;
+        }
+    }
+
+    .projects {
+        flex-wrap: wrap;
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-content: center;
+        align-items: center;
+         
+        margin-top: 30px;
+    }
+
+    img {
+        height: 320px;
+        width: 400px;
+        object-fit: cover;
+        margin: 15px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact{
+        margin-bottom: 50px;
+    }
+    .projects-container {
+        height: fit-content;
+        background-color: #1a1a1a;
+
+        .projects-button {
+            display: flex;
+
+            button {
+                margin: 5px;
+                width: 100px;
+            }
+        }
+
+    }
+    .projects {
+        flex-direction: column;
+        display: flex !important;
+        img{
+            height: 255px;
+            width: 300px;
+        }
+    }
+}
