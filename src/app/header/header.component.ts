@@ -6,18 +6,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() index = false;
+
 
   constructor() { }
   
   ngOnInit(): void {
   }
 
+  status : boolean = false;
   openDropDown(){
-      this.index = true;
-
-        console.log('hallo')
-      
+      this.status = !this.status;
   }
 
 }
