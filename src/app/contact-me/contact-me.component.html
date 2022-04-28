@@ -5,22 +5,24 @@
         <p>Get in touch via the form below, or by emailing <a href="mailto:altan.bnm@gmail.com">altan.bnm@gmail.com</a>
         </p>
   
-
+        <form (ngSubmit)="submitForm()">
         <div class="contact-formular">
             <label>Name</label>
-            <input type="text" name="name"  placeholder="Enter your Name">
+            <input type="text" name="name"  placeholder="Enter your Name" [(ngModel)]="name">
 
             <label> Email Adres</label>
-            <input placeholder="Enter your Email address">
+            <input type="email" name="email" placeholder="Enter your Email address" required [(ngModel)]="email">
 
             <label>Messae</label>
-            <textarea  name="message" placeholder="Enter your message" class="textarea"></textarea>
+            <textarea  name="message" placeholder="Enter your message" class="textarea" [(ngModel)]="message"></textarea>
+
             <div class="button-con">
-                <button type="submit" class="contact-button">Send</button>
+                  <button type="submit" class="contact-button">Send</button>
 
             </div>
-            
         </div>
+        </form>
+        
   </div>
 
 </div>

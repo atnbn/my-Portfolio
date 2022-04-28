@@ -21,6 +21,13 @@
         &:hover {
             background-color: #fa2759;
         }
+        &:active{
+            background-color: #fa2759;
+        }
+        &:focus{
+            background-color: #fa2759;
+        }
+
     }
 
     .projects {
@@ -33,7 +40,7 @@
         margin-top: 30px;
     }
 
-    img {
+    .imgProjects {
         height: 320px;
         width: 400px;
         object-fit: cover;
@@ -43,6 +50,15 @@
         &:hover {
             background-color: white;
         }
+
+        
+    }
+    .d-none{
+        display: none;
+    }
+
+    .d-flex{
+        display: flex;
     }
 }
 
@@ -67,7 +83,7 @@
     .projects {
         flex-direction: column;
         display: flex !important;
-        img{
+        .imgProjects{
             height: 255px;
             width: 300px;
         }

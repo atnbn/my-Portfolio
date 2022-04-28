@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactMeComponent implements OnInit {
 
+  name: string;
+  email: string;
+  message: string;
 
   constructor() { }
+
 
   ngOnInit(): void {
 
@@ -16,7 +20,9 @@ export class ContactMeComponent implements OnInit {
  
 
   submitForm(){
+    //grab all the fields and their values
+    alert('im submitting the form')
 
   }
-
+ 
 }

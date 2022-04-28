@@ -3,16 +3,16 @@
     <h2> My work</h2>
 
     <div class="projects-button">
-        <button>All</button>
-        <button>Angular</button>
-        <button>Java Script</button>
+        <button (click)="showAllProjects()">All</button>
+        <button (click)="showAngularProjects()">Angular</button>
+        <button (click)="showJsProjects()">Java Script</button>
     </div>
 
     <div class="projects">
-        <img src="assets/img/Kanban.png">
-        <img src="assets/img/coding-job.webp">
-        <img src="assets/img/code-1076536_1280.jpg">
-        <img src="assets/img/code-1839406_1280.jpg">
+        <img class="imgProjects"[ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/Kanban.png">
+        <img class="imgProjects" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/coding-job.webp">
+        <img class="imgProjects" [ngClass]="angularState ? 'd-none' : 'imgProjects'" src="assets/img/code-1076536_1280.jpg">
+        <img class="imgProjects" [ngClass]="angularState ? 'd-none' : 'imgProjects'" src="assets/img/code-1839406_1280.jpg">
     </div>
 
 </div>
