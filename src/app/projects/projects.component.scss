@@ -1,7 +1,8 @@
-.projects-container {
+.projects-container {       // image
     display: flex;
     align-items: center;
     flex-direction: column;
+
 
     h2 {
         font-size: 32px;
@@ -20,6 +21,7 @@
 
         &:hover {
             background-color: #fa2759;
+         
         }
         &:active{
             background-color: #fa2759;
@@ -40,16 +42,7 @@
         margin-top: 30px;
     }
 
-    .imgProjects {
-        height: 320px;
-        width: 400px;
-        object-fit: cover;
-        margin: 15px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: white;
-        }
+ 
 
         
     }
@@ -60,7 +53,74 @@
     .d-flex{
         display: flex;
     }
+
+.imgProjects { // image__img
+    height: 320px;
+    width: 400px;
+    object-fit: cover;
+    margin: 15px;
+    cursor: pointer;
+    display: block;
 }
+
+
+
+.project-container{
+    position: relative;
+}
+
+
+.hover-container{ // image_overlay
+    position: absolute;
+    top: 0;
+    z-index: 9 ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hover-title{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fa2759;
+    z-index: 1;
+}
+.hover-text{
+    font-size: 17px;
+    z-index: 1;
+}
+
+.overlay{ // image__title
+    
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background: white;
+    opacity: 0.8;
+
+    
+    &:hover{
+        display: flex !important;
+    }
+}
+
+
+
+.game { // image__description
+    color: #fa2759 !important;
+    opacity: 1 !important;
+    &:hover{
+        color: white !important;
+    }
+}
+
 
 @media (max-width: 500px) {
     .contact{

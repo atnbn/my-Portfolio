@@ -5,24 +5,28 @@
         <p>Get in touch via the form below, or by emailing <a href="mailto:altan.bnm@gmail.com">altan.bnm@gmail.com</a>
         </p>
   
-        <form (ngSubmit)="submitForm()">
-        <div class="contact-formular">
-            <label>Name</label>
-            <input type="text" name="name"  placeholder="Enter your Name" [(ngModel)]="name">
+        <form action="https://formcarry.com/s/SP4lY1OqOzy" method="POST" accept-charset="UTF-8" >
+            
+            
+            
+            <div class="contact-formular">
+                <label>Name</label>
+                <input type="text" name="Name" placeholder="Enter your name">
 
-            <label> Email Adres</label>
-            <input type="email" name="email" placeholder="Enter your Email address" required [(ngModel)]="email">
-
-            <label>Messae</label>
-            <textarea  name="message" placeholder="Enter your message" class="textarea" [(ngModel)]="message"></textarea>
-
-            <div class="button-con">
-                  <button type="submit" class="contact-button">Send</button>
-
+                <label> Email Adres</label>
+                <input type="email" name="email" placeholder="Enter your Email address">
+                
+                <label>Messae</label>
+                <textarea  name="message" placeholder="Enter your message" class="textarea"></textarea>
+                
+                <div class="button-con">
+                    <button type="submit" class="contact-button">Send</button>
+                    
+                </div>
             </div>
-        </div>
+            <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
         </form>
         
-  </div>
-
+    </div>
+    
 </div>
