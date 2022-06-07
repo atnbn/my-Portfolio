@@ -22,5 +22,7 @@ export class ContactMeComponent implements OnInit {
 
   }
  
-
+  confirmData(){
+    alert('Thank you The email has been sent')
+  }
 }
