@@ -11,26 +11,42 @@
     <div class="projects">
         <img class="imgProjects" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/Kanban.png">
 
-        <img class="imgProjects" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/coding-job.webp">
 
 
 
 
         <div class="project-container">
-            <img class="imgProjects" [ngClass]="angularState ? 'd-none' : 'imgProjects'"
-                src="assets/img/fire-ring-2091656_640.png">
-            <div class="hover-container">
+
+
+
+            <div class="container">
+            
+                <img class="image" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/coding-job.webp">
+
+                <div class="middle">
+                    <div class="text"> <p class="hover-title">Ring of fire</p>
+                        <p class="hover-text">Angular - based drunking game</p></div>
+                        <button class="game">
+                        Play</button>
+                </div>
+            </div>
+
+
+
+        <!-- <div class="hover-container"></div>
                 <div class="overlay">   
                     <p class="hover-title">Ring of fire</p>
                     <p class="hover-text">Angular - based drunking game</p>
+                    <img class="image" [ngClass]="angularState ? 'd-none' : 'imgProjects'" 
+                src="assets/img/fire-ring-2091656_640.png">
                     <a href="https://ring-of-fire-2c176.web.app">
                         <button class="game">
                             Play</button>
-                    </a>
-                </div>
-            </div>
+                        </a>      -->
+                        
+            <!-- </div>
         </div>
-
+ -->
 
 
 

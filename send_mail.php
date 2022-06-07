@@ -2,8 +2,8 @@
 
 ########### CONFIG ###############
 
-$recipient = 'your@mail.com';
-$redirect = 'success.html';
+$recipient = 'altan.bnm@gmail.com';
+$redirect = 'http://buenyamin-altan.developerakademie.com/my-portfolio/index.html';
 
 ########### CONFIG END ###########
 
