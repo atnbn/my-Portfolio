@@ -3,20 +3,20 @@
     align-items: center;
     flex-direction: column;
 
-
     h2 {
         font-size: 32px;
         color: white;
     }
 
-    button {
+    .project-button {
         height: 65px;
         width: 120px;
-        border: 2px solid #fa2759;
+   
         color: white;
         background: none;
         font-size: 18px;
         margin: 3px;
+        border: 2px solid #fa2759;
         cursor: pointer;
 
         &:hover {
@@ -42,7 +42,8 @@
         margin-top: 30px;
     }
 
- 
+
+
 
         
     }
@@ -54,6 +55,9 @@
         display: flex;
     }
 
+
+
+
 // .imgProjects { // image__img
 //     height: 320px;
 //     width: 400px;
@@ -64,23 +68,6 @@
 
 
 
-.project-container{
-    position: relative;
-}
-
-
-.hover-container{ // image_overlay
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    opacity: 0.8;
-}
 
 .hover-title{
     font-size: 17px;
@@ -94,46 +81,48 @@
     z-index: 1;
 }
 
-.overlay{ // image__title
-    
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
+
+
+.overlay{
+    content: "";
     top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     position: absolute;
-    &:hover{
-        background: white;
-        opacity: 0.8;
-    }
+    opacity: 0.5;
+    background: white;
+
 }
 
 
-
-.game { // image__description
-    color: #fa2759 !important;
-    opacity: 1 !important;
-    &:hover{
-        color: white !important;
-    }
+    .first-con{   // margin delete if 
+    height: 100%;
+    justify-content: center;
+    width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
 }
+
 
 // 
 
 
 .container {
     position: relative;
-    width: 400px;
+
+    width: 380px;
+    height: 330px;
+    margin: 20px;
   }
   
   .imgProjects {
     opacity: 1;
     display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    height: 320px;
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -149,9 +138,7 @@
     text-align: center;
   }
   
-  .container:hover .image {
-    opacity: 0.3;
-  }
+
   
   .container:hover .middle {
     opacity: 1;
@@ -169,11 +156,24 @@
 
 
   .img-button{
-    color: #fa2759 !important;
+    color: #fa2759 ;
+    background-color: white ;
+    height: 65px;
+    width: 120px;
+    font-size: 18px;
+    margin: 3px;
+    border: 2px solid #fa2759;
+    cursor: pointer;
 
-    &:hover {
+
+    &:hover{
+        opacity: 0.85;
+    }
+    &:active{
         background-color: white !important;
-
+    }
+    &:focus{
+        background-color: white !important;
     }
   }
   //
@@ -185,12 +185,16 @@
 
 
 
+@media (max-width : 880px){
+    .container{
+        width: 345px;
+    }
+}
 
 
 
 
-
-@media (max-width: 500px) {
+@media (max-width: 750px) {
     .contact{
         margin-bottom: 50px;
     }
@@ -208,12 +212,10 @@
         }
 
     }
-    .projects {
+    .first-con{
         flex-direction: column;
         display: flex !important;
-        .imgProjects{
-            height: 255px;
-            width: 300px;
-        }
+        align-items: center;
+ 
     }
 }

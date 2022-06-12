@@ -8,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
 
   constructor() { }
-
+  
+  
+  
   ngOnInit(): void {
   }
+  opacity1 : boolean  = false;
+  opacity2 : boolean  = false;
+  opacity3 : boolean  = false;
+  opacity4 : boolean  = false;
+
   jsState : boolean = false;
   angularState : boolean = false;
 

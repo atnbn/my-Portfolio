@@ -3,21 +3,20 @@
     <h2> My work</h2>
 
     <div class="projects-button">
-        <button (click)="showAllProjects()">All</button>
-        <button (click)="showAngularProjects()">Angular</button>
-        <button (click)="showJsProjects()">Java Script</button>
+        <button class="project-button" (click)="showAllProjects()">All</button>
+        <button class="project-button" (click)="showAngularProjects()">Angular</button>
+        <button class="project-button" (click)="showJsProjects()">Java Script</button>
     </div>
 
-    <div class="projects">
-     
+    <div class="first-con">
 
-        <div class="project-container">
+   
 
-            <div class="container"> 
-                <img  src="assets/img/card-game.jpg" [ngClass]="jsState ? 'd-none' : 'imgProjects'"  class="imgProjects" style="width:100%" 
-                >
-                <div class="overlay"> </div>
-
+            <div [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
+                <!-- First Container-->
+                <div [ngClass]="opacity1? 'overlay' : 'd-none'"> </div>
+                <img src="assets/img/card-game.jpg"  class="imgProjects"
+                    style="width:100%">
                 <div class="middle">
                     <div class="text">
                         <p class="hover-title">Ring of fire</p>
@@ -28,82 +27,44 @@
             </div>
 
 
-            <div class="container"> 
-                <img class="imgProjects" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/Kanban.png"> 
+            <div [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
+                <!-- Second Container-->
+                <img class="imgProjects"  src="assets/img/polo-loco-3.png">
+                <div [ngClass]="opacity2? 'overlay' : 'd-none'"> </div>
+                <div class="middle">
+                    <div class="text">
+                        <p class="hover-title">El - Polo loco</p>
+                        <p class="hover-text">Js  - based drunking game</p>
+                        <button class="img-button">Try it</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
+                <!-- Thrid Container-->
+                <img class="image" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/Kanban.png">
+                <div [ngClass]="opacity3? 'overlay' : 'd-none'"> </div>
                 <div class="middle">
                     <div class="text">
                         <p class="hover-title">Ring of fire</p>
                         <p class="hover-text">Angular - based drunking game</p>
-                        <button>Try it</button>
+                        <button class="img-button">Try it</button>
                     </div>
                 </div>
             </div>
 
-            <div class="container"> 
-                <img class="image" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/Kanban.png"> 
-                
-                <div class="middle">
-                    <div class="text">
-                        <p class="hover-title">Ring of fire</p>
-                        <p class="hover-text">Angular - based drunking game</p>
-                        <button>Try it</button>
-                    </div>
-                </div>
-            </div>
+   
 
-
-
-
-
-
-
-
-            <!-- <div class="container">
-
-                <img class="image" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/coding-job.webp">
-
-                <div class="middle">
-                    <div class="text">
-                        <p class="hover-title">Join Kanban</p>
-                        <p class="hover-text">Angular - based drunking game</p>
-                    </div>
-                    <button class="game">
-                        Play</button>
-                </div>
-            </div>
- -->
-
-<!-- 
-            <div class="hover-container"></div>
-            <div class="overlay">
+    <div [ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
+        <!-- Fourth Container-->
+        <img class="imgProjects"  src="assets/img/Kanban.png">
+        <div [ngClass]="opacity4? 'overlay' : 'd-none'"> </div>
+        <div class="middle">
+            <div class="text">
                 <p class="hover-title">Ring of fire</p>
                 <p class="hover-text">Angular - based drunking game</p>
-                <img class="image" [ngClass]="angularState ? 'd-none' : 'imgProjects'"
-                    src="assets/img/fire-ring-2091656_640.png">
-                <a href="https://ring-of-fire-2c176.web.app">
-                    <button class="game">
-                        Play</button>
-                </a> -->
-
-     -->
- 
-
-
- <!-- <div class="container">
-    <img class="imgProjects" [ngClass]="angularState ? 'd-none' : 'imgProjects'"
-    src="assets/img/code-1839406_1280.jpg">
-    <div class="middle">
-        <div class="text">
-            <p class="hover-title">Ring of fire</p>
-            <p class="hover-text">Angular - based drunking game</p>
-            <button>Try it</button>
+                <button class="img-button">Try it</button>
+            </div>
         </div>
     </div>
-</div> -->
-
-
-
-
-    </div>
-
-</div>
