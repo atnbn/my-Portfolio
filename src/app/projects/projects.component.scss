@@ -99,7 +99,7 @@
     .first-con{   // margin delete if 
     height: 100%;
     justify-content: center;
-    width: 850px;
+    width: 72%;
     display: flex;
     flex-wrap: wrap;
     margin: 40px;
@@ -112,8 +112,8 @@
 .container {
     position: relative;
 
-    width: 380px;
-    height: 330px;
+    width: 580px;
+    height: 350px;
     margin: 20px;
   }
   
@@ -182,6 +182,24 @@
 
 
 
+@media (max-width : 1680px){
+    .first-con{
+        width: 90%;
+    }
+    .container{
+        width: 507px;
+        height: 317px;
+    }
+}
+
+@media ( max-width : 1420px){
+    .container{
+
+        width: 438px;
+        height: 288px;
+    }
+}
+
 
 
 
@@ -194,7 +212,7 @@
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     .contact{
         margin-bottom: 50px;
     }
@@ -219,3 +237,23 @@
  
     }
 }
+
+
+
+
+@media (max-width: 480px) {
+.first-con{
+        margin-top:10px;
+      
+    }
+.container{
+    margin: 0;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+    width: 320px;
+    height: 300px;
+}
+    
+}
+
+

@@ -3,11 +3,12 @@
     margin-top: 67px;
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+    overflow: hidden;
 
     h1 {
-        font-size: 64px;
+   
         color: white;
     }
 
@@ -20,9 +21,9 @@
     }
 
     img {
-        width: 300px;
+    width: 300px;
     border-radius: 160px;
-    height: 300px;
+    height: 300px; 
     object-fit: cover;
     }
 
@@ -42,7 +43,9 @@
         }
     }
 }
-
+.title-con{
+    font-size: 64px;
+}
 .arrow {
     display: flex;
     justify-content: center;
@@ -59,7 +62,71 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width:1688px){
+    .container1{
+        margin-inline-start: 12%;
+        margin-inline-end: 12%;
+    }
+    
+}
+
+@media (max-width:1588px){
+    .container1{
+        margin-inline-start: 10%;
+        margin-inline-end: 10%;
+    }
+    
+}
+
+
+@media (max-width:1380px){
+    .container1{
+        margin-inline-start: 8%;
+        margin-inline-end: 8%;
+
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        button{
+            width: 230px;
+            height: 60px;
+        }
+        .arrow-img{
+            width: 60px;
+        }
+    }
+    
+    .title-con{
+        font-size: 48px;
+    }
+}
+
+
+@media (max-width: 1050px){
+   
+    .title-con{
+        font-size: 42px;
+    }
+
+    .container1{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+
+
+
+@media (max-width:900px){
+    .title-con{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 800px) {
     .container1 {
         background-color: #1a1a1a;
 
@@ -74,9 +141,7 @@
             margin-top: 100px;
         }
         h1 {
-            font-size: 40px;
-            margin-left: 25px;
-            margin-right: 25px;
+            text-align: center;
         }
 
         .button-div {
@@ -91,4 +156,11 @@
     .arrow{
         display: none;
     }
+}
+
+
+@media (max-width: 00px) {
+
+
+
 }

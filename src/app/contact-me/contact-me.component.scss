@@ -85,19 +85,16 @@ form{
         }
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .contact{
         margin-bottom: 10px;
     }
     .contact-container {
         height: fit-content;
-        
+        padding-left:15px ;
         background-color: #1a1a1a;
     } 
-    .contact {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  
     h2 {
         font-size: 36px;
         color: #2dfcd8;
@@ -112,4 +109,15 @@ form{
         width: inherit;
         background-color:#292929 !important ;
     }
+    form{
+        width: 95% !important;
+    }
+}
+
+
+
+
+@media ( max-width:800px){
+
+    
 }

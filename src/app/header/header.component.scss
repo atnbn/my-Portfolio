@@ -4,8 +4,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-inline: 15%;
+
+
 
     .header-logo {
         color: white;
@@ -50,10 +51,43 @@ img {
 .d-none {
     display: none;
 }
-@media (max-width: 500px) {
+
+
+
+@media (max-width:1588px){
+    header{
+        margin-inline-start: 10%;
+        margin-inline-end: 10%;
+    }
+    
+}
+@media (max-width:1380px){
+
+header{
+    margin-inline-start: 8%;
+    margin-inline-end: 8%;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 764px) {
     header {
-        margin-left: 10px;
-        margin-right: 10px;
+    
 
         .dropdown {
             height: 30px;
