@@ -1,30 +1,37 @@
 <div id="contactme" class="contact-container">
 
-    <div class="contact">
-        <h2>Contact me</h2>
-        <p>Get in touch via the form below, or by emailing <a href="mailto:altan.bnm@gmail.com">altan.bnm@gmail.com</a>
-        </p>
-  
-        <form ngNoForm action="https://buenyamin-altan.developerakademie.com/send_mail/send_mail.php" method="POST" accept-charset="UTF-8" >
-            
-            <div class="contact-formular">
-                <label>Name</label>
-                <input type="text" name="name" placeholder="Enter your name">
+  <div class="contact">
+    <h2>Contact me</h2>
+    <p>Get in touch via the form below, or by emailing <a href="mailto:altan.bnm@gmail.com">altan.bnm@gmail.com</a>
+    </p>
 
-                <label> Email Adress</label>
-                <input type="email" name="email" placeholder="Enter your Email address">
-                
-                <label>Messae</label>
-                <textarea  name="message" placeholder="Enter your message" class="textarea"></textarea>
-                
-                <div class="button-con">
-                    <button  type="submit"  class="contact-button">Send</button>
-                    
-                </div>
-            </div>
-    
+    <form ngNoForm action="https://buenyamin-altan.developerakademie.com/send_mail/send_mail.php" method="POST"
+      accept-charset="UTF-8">
+
+      <div class="contact-formular">
+
+
+
+        <div class="input-box">
+          <input type="text" name="name" required="required">
+          <span>First Name</span>
+        </div>
+
+        <div class="input-box">
+          <input type="email" name="email"  required="required" >
+          <span>Email</span>
+        </div>
+
+        <div class="input-box">
+            <input type="message" name="message"  required="required" class="textarea">
+            <span>Message</span>
+          </div>
+
+          <div class="button-con">
+            <button type="submit" class="contact-button">Send</button>
+          </div>
+      </div>
         </form>
-        
-    </div>
-    
+
+
 </div>

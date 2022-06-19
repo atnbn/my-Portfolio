@@ -1,90 +1,277 @@
-.contact-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    .contact {
-        margin-top: 50px;
-        margin-bottom: 30px;
+// .contact-container {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     .contact {
+//         margin-top: 50px;
+//         margin-bottom: 30px;
 
-        a {
-            text-decoration: none;
-            color: #2dfcd8;
-            margin-top: 10px;
+//         a {
+//             text-decoration: none;
+//             color: #2dfcd8;
+//             margin-top: 10px;
+//         }
+
+//         h2 {
+//             font-size: 36px;
+//             color: #2dfcd8;
+//         }
+
+//         p {
+//             color: white;
+//         }
+//     }
+// form{
+//             width: 500px;
+//         }
+    // .contact-formular {
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     label {
+    //         color: white;
+    //         margin-top: 5px;
+    //         margin-bottom: 5px;
+    //     }
+
+        
+    //     input {
+    //         border: none;
+    //         background-color: #1a1a1a;
+    //         height: 35px;
+    //         padding-left: 10px;
+    //         font-size: 18px;
+    //         color: white;
+    //         &:focus {
+    //             outline: none !important;
+    //             border: 1px solid #2dfcd8;
+    //         }
+    //     }
+    //     .textarea {
+    //         height: 180px;
+    //         color: white;
+    //         resize: none;
+    //         border: none;
+    //         outline: none;
+    //         font-size: 18px;
+    //         background-color: #1a1a1a;
+    //         padding-left: 10px;
+
+    //         &:focus {
+    //             outline: none;
+    //         }
+
+    //         &:active {
+    //             border: 1px solid #2dfcd8;
+    //         }
+    //     }
+
+    //     .button-con {
+    //         display: flex;
+    //         justify-content: flex-end;
+    //     }
+    //     .contact-button {
+    //         background: none;
+    //         width: 135px;
+    //         height: 55px;
+    //         border: 1px solid #2dfcd8;
+    //         color: #2dfcd8;
+    //         margin-top: 25px;
+
+    //         &:hover {
+    //             background-color: #2dfcd8;
+    //             color: white;
+    //         }
+    //     }
+    // }
+
+
+
+    .contact-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .contact {
+            margin-top: 50px;
+            margin-bottom: 30px;
+    
+            a {
+                text-decoration: none;
+                color: #2dfcd8;
+                margin-top: 10px;
+            }
+    
+            h2 {
+                font-size: 36px;
+                color: #2dfcd8;
+            }
+    
+            p {
+                color: white;
+            }
         }
-
+      
+        .contact-formular {
+            display: flex;
+            margin-top: 50px;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+    
+        
+            
+    
+            // Animation Try
+    
+            .input-box {
+                position: relative;
+                display: flex;
+            width: 500px;
+                
+            }
+            .input-box input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                background: #1a1a1a;
+                outline: none;
+                color: #fff;
+                font-size: 1em;
+                transition: 0.5s;
+            }
+            .input-box span {
+                position: absolute;
+                left: 0;
+                padding: 10px;
+                pointer-events: none;
+                font-size: 1em;
+                color: rgba(255, 255, 255, 0.25);
+                text-transform: uppercase;
+                transition: 0.5s;
+            }
+    
+            .input-box input:valid ~ span,
+            .input-box input:focus ~ span {
+                color: #00dfc4;
+                transform: translateX(10px) translateY(-7px);
+                font-size: 0.80em;
+                padding: 0 10px;
+                background: #1a1a1a;
+                border-left: 1px solid  #2dfcd8;
+                border-right: 1px solid  #2dfcd8;
+                letter-spacing: 0.2em;
+            }
+    
+            .input-box:nth-child(1) input:valid ~ span,
+            .input-box:nth-child(1) input:focus ~ span {
+                background:  #2dfcd8;
+                color: #1a1a1a;
+                border-radius: 2px;
+            }
+    
+            .input-box:nth-child(2) input:valid ~ span,
+            .input-box:nth-child(2) input:focus ~ span {
+                background:  #2dfcd8;
+                color: #1a1a1a;
+                border-radius: 2px;
+            }
+         
+    
+            .input-box:nth-child(3) input:valid ~ span,
+            .input-box:nth-child(3) input:focus ~ span {
+                background:  #2dfcd8;
+                color:#1a1a1a;
+                border-radius: 2px;
+            }
+    
+    
+            .input-box input:valid,
+            .input-box input:focus {
+                border: 1px solid ;
+    
+            }
+            // Animation Ends here
+    
+            .textarea {
+                height: 180px;
+                width: -webkit-fill-available;
+                color: white;
+                resize: none;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                background-color: #1a1a1a;
+                padding-left: 10px;
+    
+                &:focus {
+                    outline: none;
+                }
+    
+                &:active {
+                    border: 1px solid  #2dfcd8;
+                }
+            }
+    
+            .button-con {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .contact-button {
+                background: none;
+                width: 135px;
+                height: 55px;
+                border: 1px solid #2dfcd8;
+                color: #2dfcd8;
+                margin-top: 25px;
+    
+                &:hover {
+                    background-color: #2dfcd8;
+                    color: white;
+                }
+            }
+        }
+    }
+    @media (max-width: 800px) {
+        .contact {
+            margin-bottom: 10px;
+        }
+        .contact-container {
+            height: fit-content;
+            padding-left: 15px;
+            background-color: #1a1a1a;
+        }
+    
         h2 {
             font-size: 36px;
             color: #2dfcd8;
         }
-
-        p {
-            color: white;
+    
+        input {
+            width: inherit;
+            background-color: #292929 !important;
+        }
+    
+        .textarea {
+            width: inherit;
+            background-color: #292929 !important ;
+        }
+        form {
+            width: 95% !important;
         }
     }
-form{
-            width: 500px;
-        }
-    .contact-formular {
-        display: flex;
-        flex-direction: column;
+    
+    @media (max-width: 800px) {
+    }
+    
 
-        label {
-            color: white;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+
+
+
+
+
 
         
-        input {
-            border: none;
-            background-color: #1a1a1a;
-            height: 35px;
-            padding-left: 10px;
-            font-size: 18px;
-            color: white;
-            &:focus {
-                outline: none !important;
-                border: 1px solid #2dfcd8;
-            }
-        }
-        .textarea {
-            height: 180px;
-            color: white;
-            resize: none;
-            border: none;
-            outline: none;
-            font-size: 18px;
-            background-color: #1a1a1a;
-            padding-left: 10px;
 
-            &:focus {
-                outline: none;
-            }
-
-            &:active {
-                border: 1px solid #2dfcd8;
-            }
-        }
-
-        .button-con {
-            display: flex;
-            justify-content: flex-end;
-        }
-        .contact-button {
-            background: none;
-            width: 135px;
-            height: 55px;
-            border: 1px solid #2dfcd8;
-            color: #2dfcd8;
-            margin-top: 25px;
-
-            &:hover {
-                background-color: #2dfcd8;
-                color: white;
-            }
-        }
-    }
-}
 @media (max-width: 800px) {
     .contact{
         margin-bottom: 10px;
