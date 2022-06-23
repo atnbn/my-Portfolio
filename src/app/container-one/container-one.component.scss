@@ -285,9 +285,35 @@
 }
 
 
-@media (max-height: 1000px){
-    
+@media (max-height: 1100px){
+.container1{
+    margin-top: 150px;
 }
+
+ .spacing{
+    margin-top: 100px;
+    margin-right: 50px;
+ }   
+}
+
+@media (max-height: 800px){
+    .container1{
+        margin-top: 80px;
+    }
+    
+     .spacing{
+        margin-top: 50px;
+        margin-right: 50px;
+     }   
+    }
+
+
+@media (max-height: 1100px){
+    .spacing{
+       margin-top: 100px;
+       margin-right: 50px;
+    }   
+   }
 
 
 @media (max-width: 900px) {

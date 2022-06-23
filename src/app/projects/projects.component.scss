@@ -199,7 +199,11 @@
         height: 288px;
     }
 }
-
+@media (max-height : 1100px){
+.projects-container{
+    height: fit-content;
+}
+}
 @media ( max-width : 1080px){
     .projects-container{
         height: fit-content;
