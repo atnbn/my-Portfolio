@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ImprintComponent } from './imprint/imprint.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ContactMeComponent,
     FooterComponent,
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,

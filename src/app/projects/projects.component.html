@@ -1,18 +1,18 @@
-<div id="portfolio" class="projects-container">
+<div id="projects" class="projects-container">
 
-    <h2> My work</h2>
+    <h2 data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"> My work</h2>
 
     <div class="projects-button">
-        <button class="project-button" (click)="showAllProjects()">All</button>
-        <button class="project-button" (click)="showAngularProjects()">Angular</button>
-        <button class="project-button" (click)="showJsProjects()">Java Script</button>
+        <button data-aos-anchor-placement="bottom-bottom" data-aos="fade-right" class="project-button" (click)="showAllProjects()">All</button>
+        <button data-aos-anchor-placement="bottom-bottom" data-aos="fade-in" class="project-button" (click)="showAngularProjects()">Angular</button>
+        <button data-aos-anchor-placement="bottom-bottom" data-aos="fade-left" class="project-button" (click)="showJsProjects()">Java Script</button>
     </div>
 
     <div class="first-con">
 
    
 
-            <div [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
+            <div  data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
                 <!-- First Container-->
                 <div [ngClass]="opacity1? 'overlay' : 'd-none'"> </div>
                 <img src="assets/img/card-game.jpg"  class="imgProjects"
@@ -21,13 +21,13 @@
                     <div class="text">
                         <p class="hover-title">Ring of fire</p>
                         <p class="hover-text">Angular - based drunking game</p>
-                        <button class="img-button">Try it</button>
+                        <a href="https://ring-of-fire-2c176.web.app"><button class="img-button">Try it</button></a>
                     </div>
                 </div>
             </div>
 
 
-            <div [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
+            <div data-aos-anchor-placement="bottom-bottom"   data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
                 <!-- Second Container-->
                 <img class="imgProjects"  src="assets/img/polo-loco-3.png">
                 <div [ngClass]="opacity2? 'overlay' : 'd-none'"> </div>
@@ -41,7 +41,7 @@
             </div>
 
 
-            <div [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
+                <div  data-aos-anchor-placement="center-bottom"  data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
                 <!-- Thrid Container-->
                 <img class="image" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/Kanban.png">
                 <div [ngClass]="opacity3? 'overlay' : 'd-none'"> </div>
@@ -56,15 +56,18 @@
 
    
 
-    <div [ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
+    <div data-aos-anchor-placement="center-bottom"  data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in"[ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
         <!-- Fourth Container-->
-        <img class="imgProjects"  src="assets/img/Kanban.png">
+        <img class="imgProjects"  src="assets/img/stickies-4054379_640.jpg">
         <div [ngClass]="opacity4? 'overlay' : 'd-none'"> </div>
         <div class="middle">
             <div class="text">
-                <p class="hover-title">Ring of fire</p>
-                <p class="hover-text">Angular - based drunking game</p>
-                <button class="img-button">Try it</button>
+                <p class="hover-title">Kanban</p>
+                <p class="hover-text">Js - based tasks management system</p>
+                <a href="http://gruppe-126.developerakademie.net/Join-Kanban%20Endversion/index.html">
+                    <button class="img-button">Try it</button>
+                </a>
+                    
             </div>
         </div>
     </div>

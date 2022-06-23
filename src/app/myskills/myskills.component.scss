@@ -2,7 +2,7 @@
     background-color: #1A1A1A;;
     display: flex;
     justify-content: center;
-
+    height: 74vh;
     
 
     h2{
@@ -10,9 +10,11 @@
         align-items: center;
         justify-content: center;
         color: white;
-        font-size: 36px;
+        font-size: 48px;
     }
-
+    .margin-top{
+        margin-top: 50px;
+    }
 
     .grid{
         
@@ -190,4 +192,16 @@
         p{
             font-size: 15px !important;
         }
+    }
+
+
+    @media (max-height: 1100px){
+        .margin-top{
+            margin-top: 10px !important;
+        }
+
+        .myskills{
+            height: fit-content;
+        }
+
     }

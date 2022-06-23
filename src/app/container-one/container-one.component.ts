@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-container-one',
   templateUrl: './container-one.component.html',
@@ -8,14 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ContainerOneComponent implements OnInit {
 
 
-  constructor() { 
+  constructor(public router: Router) { 
     
   }
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView();
-}
- 
 
   
 
