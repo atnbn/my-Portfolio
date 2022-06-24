@@ -1,8 +1,10 @@
+
+
 .myskills{
-    background-color: #1A1A1A;;
     display: flex;
     justify-content: center;
-    height: 74vh;
+    background-color: #1A1A1A;;
+    height: fit-content;
     
 
     h2{
@@ -168,9 +170,6 @@
 
     @media (max-width: 534px){
 
-
-
-
         .grid{
             margin: 0;
             width: 354px  !important ;
@@ -179,9 +178,12 @@
 
 
 
-    @media (max-width: 400px){
+    @media (max-width: 480px){
+        .myskills{
+            height: fit-content;
+        }
         .grid{
-        width: 330px !important;
+        width: 369px !important;
         }
 
         .skill-box{
@@ -201,7 +203,30 @@
         }
 
         .myskills{
+        }
+        .skill-box{
+            height: 134px;
+            width: 178px;
+        }
+
+    }
+
+    @media(max-width: 420px){
+
+        .myskills{
+            h2{
+                font-size: 35px;
+            }
+        }
+        .grid{
+            width: fit-content !important;
+        }
+    }
+
+    @media(max-height: 640px){
+        .myskills{
             height: fit-content;
+
         }
 
     }

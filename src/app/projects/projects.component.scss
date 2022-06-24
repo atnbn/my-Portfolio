@@ -203,6 +203,11 @@
 .projects-container{
     height: fit-content;
 }
+.container{
+    height: 328px;
+    width: 440px;
+}
+
 }
 @media ( max-width : 1080px){
     .projects-container{
@@ -270,3 +275,20 @@
 }
 
 
+
+@media(max-width: 420px){
+    .projects-container{
+        .project-button{
+            font-size: 15px;
+            height: 60px;
+            width: 60px;
+        }
+    }
+    .container{
+
+
+ width: inherit;
+ height: 200px;
+    }
+
+}
