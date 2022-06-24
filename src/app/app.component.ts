@@ -17,11 +17,11 @@ export class AppComponent {
 
 
   ngOnInit(){
-    // Aos.init({
+    Aos.init({
 
-    //   useClassNames:false
-
-    // }
-    // );
+      useClassNames:false,
+      once: true,
+    }
+    );
   }
 }
