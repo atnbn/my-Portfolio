@@ -1,8 +1,11 @@
-*{
-    border: 1px solid limegreen;
-}
+// *{
+//     border: 1px solid limegreen;
+// }
 
-
+ @font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-Regular.ttf) format('truetype');
+ }
 
 html{
     scroll-behavior: smooth;
@@ -13,8 +16,8 @@ html{
 body{
     margin: 0;
     background-color: #000000;
-    font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
 
 }
 

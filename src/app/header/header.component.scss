@@ -80,9 +80,6 @@ img {
 // Animation starts here 
 
 
-.glow-on-hover {
-   
-}
 
 .fullscreen-link:before {
     content: '';
@@ -105,9 +102,9 @@ img {
     color: #000
 }
 
-.fullscreen-link:active:after {
-    background: transparent;
-}
+// .fullscreen-link:active:after {
+//     background: transparent;
+// }
 
 .fullscreen-link:hover:before {
     opacity: 1;
