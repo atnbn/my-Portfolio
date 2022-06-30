@@ -1,16 +1,14 @@
 header {
-    padding: 10px;
-    z-index: 1;
     box-shadow: 0 2px 3px rgba(255, 255, 255, 0.116);
+    padding-top: 5px;
+    padding-bottom: 5px;
     top: 0;
     right: 0;
     left: 0;
     background-color: #000;
-    background-color: #000;
     position: fixed;
     z-index: 2;
-   
-
+    
 
 
 
@@ -50,7 +48,10 @@ header {
 .drop-down {
     display: none;
 }
-
+.logo{
+    min-height: 30px;
+    max-height: 60px;
+}
 img {
     min-height: 30px;
     max-height: 60px;
@@ -162,11 +163,13 @@ img {
 //     }
 // }
 
-@media (max-width: 910px) {
+@media (max-width: 1000px) {
     .margin {
         .dropdown {
             height: 30px;
             display: flex;
+            margin-left: 1px;
+            margin-right :1px;
         }
 
         .links {
