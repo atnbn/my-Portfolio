@@ -1,18 +1,14 @@
-
-.block{
+.block {
     margin-top: 30px;
     height: calc(80vh + 10px);
 }
-.margin{
+.margin {
     margin-left: 15%;
     margin-right: 15%;
 }
 
-.spacing{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.spacing {
+    margin-top: 10rem;
 }
 .container1 {
     margin-top: 200px;
@@ -21,7 +17,6 @@
     overflow: hidden;
 
     h1 {
-   
         color: white;
     }
 
@@ -29,18 +24,16 @@
         color: #fa2759;
     }
 
-  
     img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     button {
-
-   width: 14vw;
-   height: 4vw;
+        width: 14vw;
+        height: 4vw;
         margin-top: 40px;
         font-size: 18px;
         color: #2dfcd8;
@@ -55,16 +48,13 @@
         }
     }
 }
-.title-con{
+.title-con {
     font-size: 3.5vw;
 }
-
-
 
 // Here starts the animation
 
 .glow-on-hover {
-
     border: none;
     outline: none;
     color: #fff;
@@ -76,11 +66,11 @@
 }
 
 .glow-on-hover:before {
-    content: '';
+    content: "";
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -88,12 +78,12 @@
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -106,7 +96,7 @@
 
 .glow-on-hover:after {
     z-index: -1;
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -117,98 +107,160 @@
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 
 // Arrow Animation // Arrow Animationv // Arrow Animation // Arrow Animationv// Arrow Animation // Arrow Animation // Arrow Animation
 
+// arrow animation
+$circle-w: 90px;
+$circle-bg: #fff;
+$arrow-bg: #55544f;
+$body-bg: #9ddcdc;
+$bezier: cubic-bezier(0.77, 0, 0.175, 1);
+$bezier-bounce: cubic-bezier(0.87, -0.41, 0.19, 1.44);
+$anim-timing: 3s;
 
+.ico {
+    margin: 0 auto;
+    text-align: center;
+    width: $circle-w;
+    height: $circle-w;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: url("#goo");
+    .circle {
+        background: black; // background color
+        border-radius: 50%;
+        display: inline-block;
+        height: $circle-w;
+        width: $circle-w;
 
-.arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        transform-origin: 0%;
 
-    transform: translate(-50%, -50%);
-}
-
-.arrow span {
-    display: block;
-    width: 25px;
-    height: 25px;
-    border-bottom: 5px solid #06A8FF;
-    border-right: 5px solid #06A8FF;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: scroll1 2s infinite;
-}
-
-.arrow span:nth-child(2) {
-    animation-delay: -.2s;
-}
-
-.arrow span:nth-child(3) {
-    animation-delay: -.4s;
-}
-
-@keyframes scroll1 {
-    0% {
-        opacity: 1;
-        transform: rotate(45deg) translate(-20px, -20px);
-        border-bottom: 5px solid #ff6a06;
-        border-right: 5px solid #ff9b06;
+        &.circle-top {
+            height: $circle-w / 3;
+            width: $circle-w / 2.4;
+            animation: blob-1-anim $anim-timing $bezier infinite;
+            z-index: 0;
+            top: 0;
+        }
+        &.circle-bottom {
+            height: $circle-w / 3;
+            width: $circle-w / 2.4;
+            animation: blob-2-anim $anim-timing $bezier infinite;
+            z-index: 9;
+            bottom: 0px;
+        }
     }
-    50% {
-        opacity: 1;
-        transform: rotate(45deg) translate(-20px, -20px);
+
+    .st-arrow {
+        fill: white; // arrow color
+        animation: scrolly $anim-timing $bezier forwards infinite;
+        perspective: 9000px;
+        transform: translateZ(0);
+        transform-origin: bottom;
+    }
+}
+
+.svg {
+    z-index: 9;
+    position: relative;
+}
+
+@keyframes blob-1-anim {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    14% {
+        transform: translateX(-50%) translateY(-8px);
+    }
+    24% {
+        transform: translateX(-50%) translateY(0);
     }
     100% {
-        opacity: 1;
-        transform: rotate(45deg) translate(-20px, -20px);
+        transform: translateX(-50%) translateY(0);
     }
 }
 
-
-
-
-
-// Here ends the animation
-
-
-@media (max-width:1500px){
-
-    .container1{
-    img{
-        width: 220px;
-        height: 220px;
-    }}
+@keyframes blob-2-anim {
+    0% {
+        //transform: scale(1) translate(-50%,-150%);
+        transform: scale(1) translate(-50%, 10px);
+    }
+    30% {
+        //transform: scale(1) translate(-50%,-50%);
+        transform: scale(1) translate(-50%, 10px);
+    }
+    70% {
+        //transform: scale(1) translate(-50%,-50%);
+        transform: scale(1) translate(-50%, 10px);
+    }
+    95% {
+        //transform: scale(1) translate(-50%,-50%);
+        transform: scale(1) translate(-50%, 26px);
+    }
+    100% {
+        //transform: scaleX(1.5) translate(-50%,140%);
+        transform: scale(1) translate(-50%, 10px);
+    }
 }
 
+@keyframes scrolly {
+    0% {
+        transform: translate3d(0, -150%, 0) rotateX(90deg) scale(0.5) skewX(3deg);
+    }
+    30% {
+        transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+    }
+    70% {
+        transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+    }
+    95% {
+        transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+    }
+    100% {
+        transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+    }
+}
+// Here ends the animation
 
-
-
-
-
-
-
-
-
+@media (max-width: 1500px) {
+    .container1 {
+        img {
+            width: 220px;
+            height: 220px;
+        }
+    }
+}
 
 // @media (max-width:1920px){
 //     .container1{
 //         margin-inline-start: 15%;
 //         margin-inline-end: 15%;
 //     }
-    
+
 // }
-
-
 
 // @media (max-width:1688px){
 //     .container1{
 //         margin-inline-start: 12%;
 //         margin-inline-end: 12%;
 //     }
-    
+
 // }
 
 // @media (max-width:1588px){
@@ -216,9 +268,8 @@
 //         margin-inline-start: 10%;
 //         margin-inline-end: 10%;
 //     }
-    
-// }
 
+// }
 
 // @media (max-width:1380px){
 //     .container1{
@@ -237,15 +288,14 @@
 //             width: 60px;
 //         }
 //     }
-    
+
 //     .title-con{
 //         font-size: 48px;
 //     }
 // }
 
-
 // @media (max-width: 1050px){
-   
+
 //     .title-con{
 //         font-size: 42px;
 //     }
@@ -258,66 +308,58 @@
 //     }
 // }
 
-
-@media (max-height: 700px){
-.block{
-    height: calc(80vh + 20px);
-}
-.container1{
-    margin-top: 150px;
-    .title-con{
-        font-size: 2.5em;
+@media (max-height: 700px) {
+    .block {
+        height: calc(80vh + 20px);
+    }
+    .container1 {
+        margin-top: 150px;
+        .title-con {
+            font-size: 2.5em;
+        }
     }
 }
-}
 
+@media (max-height: 500px) {
+    .container1 {
+        margin-top: 75px;
+        .title-con {
+            font-size: 2.25em;
+        }
 
-@media (max-height: 500px){
-
-
-.container1{
-    margin-top: 75px;
-    .title-con{
-        font-size: 2.25em;
+        button {
+            margin-top: 20px;
+        }
     }
-    
-
-    button{
-        margin-top: 20px;
-    }
-}
 }
 //  .spacing{
 //     margin-top: 100px;
 //     margin-right: 50px;
-//  }   
+//  }
 // }
 
 // @media (max-height: 960px){
-    
+
 //     .container1{
 //         margin-top: 120px;
 //     }
-    
+
 //      .spacing{
 //         margin-top: 50px;
 //         margin-right: 50px;
-//      }   
+//      }
 //     }
-
 
 // @media (max-height: 1100px){
 //     .spacing{
 //        margin-top: 100px;
 //        margin-right: 50px;
-//     }   
+//     }
 //    }
 
-
 @media (max-width: 1000px) {
-    .block{
+    .block {
         background-color: #1a1a1a;
-
     }
     .container1 {
         margin-top: 5px;
@@ -335,68 +377,58 @@
         h1 {
             text-align: center;
         }
-        .title-con{
+        .title-con {
             margin-top: 50px;
         }
         .button-div {
             display: flex;
             justify-content: center;
             margin-top: 50px;
-            button{
-
+            button {
                 width: 200px;
                 height: 80px;
-
-                        }
+            }
         }
     }
-    .arrow{
-        display: none;
+    .ico{
+
+        .circle{
+            background: #1a1a1a;
+        }
     }
-        .down-arrow{
-            width: fit-content;
-        
-    }
-    .arrow-img{width: 60px;}
-    .title-con{
+    .title-con {
         font-size: 38px;
     }
-    .spacing{
-        margin-left: 80px;
-        margin-top: 50px;
+    .spacing {
+        margin-top: 150px;
     }
 }
 
-
-
-
-@media (max-width: 551px){
-
-    .title-con{
+@media (max-width: 551px) {
+    .title-con {
         font-size: 30px;
     }
 }
 
-.block{
+.block {
     height: fit-content;
 }
 // }
 
-@media(max-height: 800px){
-    .spacing{
-        .block{
-            height: fit-content;
-        }
-        margin-top: 50px;
+@media (max-height: 800px) {
+    .block {
+        height: fit-content;
+    }
+    .spacing {
+        margin-top: 100px;
     }
 }
 
 // @media(max-width: 420px){
 
-//    
+//
 //         .container1{
 
-    
 //     .title-con{
 //         font-size: 30px;
 //     }
