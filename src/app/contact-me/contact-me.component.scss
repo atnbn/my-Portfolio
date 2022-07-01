@@ -152,22 +152,23 @@
 
         
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .contact{
         margin-bottom: 10px;
     }
     .contact-container {
         height: fit-content;
         padding-left:15px ;
+        width: 80%;
+
         background-color: #1a1a1a;
     } 
     .contact{
-        width: 100%;
-        margin-right: 15px;
+        margin-right: 8px;
     }
 
     .input-box{
-        width: 100%;
+        width: 65%;
     }
 
 

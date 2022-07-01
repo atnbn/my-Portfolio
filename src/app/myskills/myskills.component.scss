@@ -3,8 +3,7 @@
 .myskills{
     display: flex;
     justify-content: center;
-    background-color: #1A1A1A;;
-    height: fit-content;
+    background-color: #1A1A1A;
     
 
     h2{
@@ -20,29 +19,29 @@
 
     .grid{
         
-        display: flex;
+        display: grid;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        width: 800px;
-        margin: 10px;
+        grid-template-columns: 13em 13em 13em;
+        grid-template-rows: 13em 13em 13em ;
+
+        column-gap: 1.5em;
+        row-gap: 1.5em;
     }
     .skill-box{
-        height: 140px;
-        width: 200px;
         border-radius: 15px;
         background-color: white;
         justify-content: center;
-        align-items: center;
+        align-items: center;            
         display:flex;
         flex-direction: column;
         position: relative;
-        margin: 20px;
         margin-top: 30px;
+        height: 7.5em;
     }
 
     .img-box{
-        height: 70px;
+        height: 4em;
         width: 70px;
         border-radius: 50px;
         background-color: white;
@@ -76,156 +75,197 @@
 
 
 
-@media (max-width: 1050px){
-.myskills{
-    .grid{
-        width: 630px;
-
-    }
-.skill-box{
-    height: 131px;
-    width: 180px;
-    margin: 15px;
-}
-
-   
-}
-}
-
-
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .myskills{
-
-        .grid{
-            width: 600px;
-        }
-        .skill-box{
-            margin: 10px;
-            height: 120px;
-            width: 170px;
-        }    }
-}
-
-
-
-
-
-
-@media (max-width:700px) {
-    .myskills{
-        .skill-box{
-            height: 100px;
-            width: 150px;
-        }
-        .img-box{
-            height: 50px;
-            width: 50px;
-        }
-        .small-img{
-            width: 30px;
-            height: 30px;
-        }
-        img{
-            height: 25px;
-        }
             .grid{
-            width: inherit;
-        }
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+
     }
+
+.margin-top{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5em;
+
+}
+    .skill-box{
+    width: 25%;
+    height: 7.5em;
+    }
+    }
+
+
 }
 
 
 
-@media (max-width: 620px){
+
+
+@media (max-width:700px){
     .myskills{
-
-
-    .grid{
-        width: 422px;
-        .skill-box{
-            width: 102px;
-            height: 75px;
-            margin: 8px;
-            margin-top: 30px;
-
-            p{
-                font-size: 16px;
-            }
-
-            .img-box{
-                width: 50px;
-                height: 50px;
-
-                img{
-                    width: 30px;
-                    height: 30px;
-                }
-            }
+        .grid{
+            width: 70%;
         }
-
+        .skill-box{
+            width: 35%;
+        }
     }
 }
-    }
 
 
-    @media (max-width: 534px){
 
+
+@media (max-width:450px){
+    .myskills{
         .grid{
-            margin: 0;
-            width: 354px  !important ;
+            width: 80%;
         }
-    }
-
-
-
-    @media (max-width: 480px){
-        .myskills{
-            height: fit-content;
-        }
-        .grid{
-        width: 369px !important;
-        }
-
         .skill-box{
-            width: 92px !important;
-            height: 70px;
-          
-        }
-        p{
-            font-size: 15px !important;
+            width: 40%;
         }
     }
+}
 
 
-    @media (max-height: 1100px){
-        .margin-top{
-            margin-top: 10px !important;
-        }
+
+// @media (max-width: 900px){
+//     .myskills{
+
+//         .grid{
+//             width: 600px;
+//         }
+//         .skill-box{
+//             margin: 10px;
+//             height: 120px;
+//             width: 170px;
+//         }    }
+// }
+
+
+
+
+
+
+// @media (max-width:700px) {
+//     .myskills{
+//         .skill-box{
+//             height: 100px;
+//             width: 150px;
+//         }
+//         .img-box{
+//             height: 50px;
+//             width: 50px;
+//         }
+//         .small-img{
+//             width: 30px;
+//             height: 30px;
+//         }
+//         img{
+//             height: 25px;
+//         }
+//             .grid{
+//             width: inherit;
+//         }
+//     }
+// }
+
+
+
+// @media (max-width: 620px){
+//     .myskills{
+
+
+//     .grid{
+//         width: 422px;
+//         .skill-box{
+//             width: 102px;
+//             height: 75px;
+//             margin: 8px;
+//             margin-top: 30px;
+
+//             p{
+//                 font-size: 16px;
+//             }
+
+//             .img-box{
+//                 width: 50px;
+//                 height: 50px;
+
+//                 img{
+//                     width: 30px;
+//                     height: 30px;
+//                 }
+//             }
+//         }
+
+//     }
+// }
+//     }
+
+
+//     @media (max-width: 534px){
+
+//         .grid{
+//             margin: 0;
+//             width: 354px  !important ;
+//         }
+//     }
+
+
+
+//     @media (max-width: 480px){
+//         .myskills{
+//             height: fit-content;
+//         }
+//         .grid{
+//         width: 369px !important;
+//         }
+
+//         .skill-box{
+//             width: 92px !important;
+//             height: 70px;
+          
+//         }
+//         p{
+//             font-size: 15px !important;
+//         }
+//     }
+
+
+//     @media (max-height: 1100px){
+//         .margin-top{
+//             margin-top: 10px !important;
+//         }
 
        
-        .skill-box{
-            height: 134px;
-            width: 178px;
-        }
+//         .skill-box{
+//             height: 134px;
+//             width: 178px;
+//         }
 
-    }
+//     }
 
-    @media(max-width: 420px){
+//     @media(max-width: 420px){
 
-        .myskills{
-            h2{
-                font-size: 35px;
-            }
-        }
-        .grid{
-            width: fit-content !important;
-        }
-    }
+//         .myskills{
+//             h2{
+//                 font-size: 35px;
+//             }
+//         }
+//         .grid{
+//             width: fit-content !important;
+//         }
+//     }
 
-    @media(max-height: 640px){
-        .myskills{
-            height: fit-content;
+//     @media(max-height: 640px){
+//         .myskills{
+//             height: fit-content;
 
-        }
+//         }
 
-    }
+//     }
