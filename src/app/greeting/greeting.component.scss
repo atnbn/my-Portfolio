@@ -408,11 +408,12 @@ $anim-timing: 3s;
     .title-con {
         font-size: 30px;
     }
+    .block {
+        height: fit-content;
+    }
 }
 
-.block {
-    height: fit-content;
-}
+
 // }
 
 @media (max-height: 800px) {

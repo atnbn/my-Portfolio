@@ -3,16 +3,16 @@
     <h2 data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"> My work</h2>
 
     <div class="projects-button">
-        <button data-aos-anchor-placement="bottom-bottom" data-aos="fade-right" class="project-button" (click)="showAllProjects()">All</button>
-        <button data-aos-anchor-placement="bottom-bottom" data-aos="fade-in" class="project-button" (click)="showAngularProjects()">Angular</button>
-        <button data-aos-anchor-placement="bottom-bottom" data-aos="fade-left" class="project-button" (click)="showJsProjects()">Java Script</button>
+        <button  data-aos="fade-right" class="project-button" (click)="showAllProjects()">All</button>
+        <button  data-aos="fade-in" class="project-button" (click)="showAngularProjects()">Angular</button>
+        <button  data-aos="fade-left" class="project-button" (click)="showJsProjects()">Java Script</button>
     </div>
 
     <div class="first-con">
 
    
 
-            <div  data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
+            <div   data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
                 <!-- First Container-->
                 <div [ngClass]="opacity1? 'overlay' : 'd-none'"> </div>
                 <img src="assets/img/card-game.jpg"  class="imgProjects"
@@ -27,7 +27,7 @@
             </div>
 
 
-            <div data-aos-anchor-placement="bottom-bottom"   data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
+            <div    data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
                 <!-- Second Container-->
                 <img class="imgProjects"  src="assets/img/Opción 1.png">
                 <div [ngClass]="opacity2? 'overlay' : 'd-none'"> </div>
@@ -44,7 +44,7 @@
             </div>
 
 
-                <div  data-aos-anchor-placement="top-center"  data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
+                <div   data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
                 <!-- Thrid Container-->
                 <img class="image" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src="assets/img/question-mark-460864_640.png">
                 <div [ngClass]="opacity3? 'overlay' : 'd-none'"> </div>
@@ -59,7 +59,7 @@
 
    
 
-    <div data-aos-anchor-placement="top-center"  data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in"[ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
+    <div  data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in"[ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
         <!-- Fourth Container-->
         <img class="imgProjects"  src="assets/img/stickies-4054379_640.jpg">
         <div [ngClass]="opacity4? 'overlay' : 'd-none'"> </div>
