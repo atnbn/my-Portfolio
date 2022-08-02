@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { StartScreenComponent } from './start-screen/start-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +25,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     FooterComponent,
     ImprintComponent,
     DataProtectionComponent,
+    StartScreenComponent,
   ],
   imports: [
     BrowserModule,
