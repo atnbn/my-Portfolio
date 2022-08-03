@@ -1,11 +1,9 @@
-.block{
+.block {
     min-height: 100vh;
-    background: #0c192c;
-    margin-top: 68px;
-
+    background-color: #000000;
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -14,46 +12,98 @@
     justify-content: center;
 }
 
-.bubbles{
+.bubbles {
     position: relative;
     display: flex;
-     
-    
-
-    
 }
 
-.bubbles span{
-  
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: #4fc3dc;
-        margin: 0 4px;
-        border-radius: 50%;
-        box-shadow: 0 0 0 10px #4fc3dc44,
-        0 0 50px #4fc3dc,
-        0 0 100px #4fc3dc;
-        animation: animate 15s linear infinite;
-        animation-duration: calc(125s/ var(--i));
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
 }
 
-.bubbles span:nth-child(even){
+.bubbles span:nth-child(even) {
     background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-        0 0 50px #ff2d75,
-        0 0 100px #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
 }
 
-@keyframes animate 
-{
-    0%{
-        transform: translateY(100vh) scale(0) 
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
     }
 
-    100%{
-        transform: translateY(-10vh) scale(1) 
+    100% {
+        transform: translateY(-10vh) scale(1);
     }
 }
 
+.title-container {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
+    img {
+        width: 20px;
+        color: white;
+        height: auto;
+        margin-left: 15px;
+        
+    }
+}
+
+.title {
+    color: white;
+    font-size: 48px;
+
+    span {
+        color: #fa2759;
+    }
+}
+.button-con {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15pt;
+    padding: 15px 25px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+
+
+    &:hover {
+        background-color: #fa2759;
+
+
+
+        img{
+            transition: 0.5s;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .title {
+        font-size: 38px;
+    }
+}

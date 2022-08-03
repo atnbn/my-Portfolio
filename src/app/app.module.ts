@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { StartScreenComponent } from './start-screen/start-screen.component';
+
 @NgModule({
   declarations: [
     AppComponent,
