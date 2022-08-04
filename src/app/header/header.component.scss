@@ -159,6 +159,10 @@ img {
 
 @media (max-width: 1000px) {
     .margin {
+        margin-left: 10px;
+        margin-right: 0;
+
+         
         .dropdown {
             height: 30px;
             display: flex;
@@ -211,8 +215,8 @@ img {
 
     .drop-down {
         display: flex;
-        top: 80px;
-        right: 2px;
+        top: 50px;
+        left: 0px;
         position: absolute;
         background: black;
         flex-direction: column;

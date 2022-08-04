@@ -15,7 +15,6 @@
         color: white;
         background: none;
         font-size: 18px;
-        margin: 3px;
         border: 2px solid #fa2759;
         cursor: pointer;
 
@@ -257,20 +256,20 @@
 
 
 
-// @media (max-width: 480px) {
-// .first-con{
-//         margin-top:10px;
-      
-//     }
-// .container{
-//     margin: 0;
-//     margin-bottom: 15px !important;
-//     margin-top: 15px !important;
-//     width: 320px;
-//     height: 300px;
-// }
+@media (max-width: 480px) {
+.project-button{
+    font-size: 15px;
+    width: 100px;
     
-// }
+}
+
+.middle{
+    margin-left:5px;
+    margin-right: 5px;
+    margin: 0;
+}
+    
+}
 
 
 
