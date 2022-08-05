@@ -20,7 +20,8 @@ export class ProjectsComponent implements OnInit {
 
   jsState : boolean = false;
   angularState : boolean = false;
-
+  shrink : boolean = false;
+  grow : boolean = false;
   showJsProjects(){
     this.jsState = this.jsState = false;
     this.angularState = true;
@@ -30,11 +31,13 @@ export class ProjectsComponent implements OnInit {
   showAngularProjects(){
     this.angularState = false;
     this.jsState = true;
+    this.shrink = true;
   }
 
   showAllProjects(){
     this.jsState = false;
     this.angularState = false;
+    this.shrink = false;
   }
   
 

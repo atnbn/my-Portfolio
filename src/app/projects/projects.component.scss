@@ -43,12 +43,42 @@
 
 
 
-
+    .form-container{
+        animation:shrinkorGrow 1s forwards;
+    }
         
-    
+    @keyframes shrinkorGrow{
+
+        0%{
+            transform:scale(1);
+        }
+
+
+        100%{
+            transform:scale(1.5);
+        }
+
+    }
     .d-none{
         display: none;
         }
+
+
+        .dissapear{
+            display: none;
+            animation: fadeout 0.5s forwards;
+        }
+@keyframes fadeout{
+
+
+
+    100%{
+        opacity: 0;
+        display: none;
+    }
+
+
+}
 
     .d-flex{
         display: flex;
@@ -112,7 +142,28 @@
     height: 300px;
     width: 390px;
     margin: 20px;
+    animation: show 0.5s ease-in forwards ;
   }
+  @keyframes show{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    50%{
+        // transform: scale(15px);
+
+    }
+
+    100%{
+        opacity: 1;
+    }
+  }
+
+
+
+
+
+
   
   .imgProjects {
     opacity: 1;

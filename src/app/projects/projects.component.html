@@ -8,11 +8,11 @@
         <button  data-aos="fade-up" class="project-button" (click)="showJsProjects()">Java Script</button>
     </div>
 
-    <div class="first-con">
+    <div class="first-con" [ngClass]="grow ? 'form-container': '' " >
 
    
 
-            <div   data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
+            <div   data-aos-duration="1000"  data-aos-delay="300"  data-aos="fade-up" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
                 <!-- First Container-->
                 <div [ngClass]="opacity1? 'overlay' : 'd-none'"> </div>
                 <img src="assets/img/computer-3542771_640.png"  class="imgProjects"
@@ -27,7 +27,7 @@
             </div>
 
 
-            <div    data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
+            <div    data-aos-duration="1000"  data-aos-delay="500"  data-aos="fade-up" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
                 <!-- Second Container-->
                 <img class="imgProjects"  src="assets/img/computer-2170392_640.png">
                 <div [ngClass]="opacity2? 'overlay' : 'd-none'"> </div>
@@ -44,7 +44,7 @@
             </div>
 
 
-                <div   data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
+                <div   data-aos-duration="1000"  data-aos-delay="600"  data-aos="fade-up" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
                 <!-- Thrid Container-->
                 <img class="imgProjects" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src=" assets/img/catch-464737_1280.png">
                 <div [ngClass]="opacity3? 'overlay' : 'd-none'"> </div>
@@ -52,14 +52,17 @@
                     <div class="text">
                         <p class="hover-title">My Portfolio</p>
                         <p class="hover-text">This Site was created with Angular</p>
-                        <button class="img-button">Try it</button>
+                        <a href="#">
+
+                            <button class="img-button">Try it</button>
+                        </a>
                     </div>
                 </div>
             </div>
 
    
 
-    <div  data-aos-duration="1000"  data-aos-delay="300"  data-aos="zoom-in"[ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
+    <div  data-aos-duration="1000"  data-aos-delay="700"  data-aos="fade-up" [ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
         <!-- Fourth Container-->
         <img class="imgProjects"  src="assets/img/laptop-2443049_640.png">
         <div [ngClass]="opacity4? 'overlay' : 'd-none'"> </div>
