@@ -7,7 +7,7 @@ background-color: white;
 .footer{
     display: flex;
     justify-content: space-between;
-    height: 20vh;
+    height: 10vh;
     align-items: center;
     margin-left: 160px;
 
@@ -35,7 +35,6 @@ background-color: white;
         margin-left: 180px;
         margin-right: 180px;
         flex-direction: column-reverse;
-        height: 13vh;
        
     }
 
@@ -76,7 +75,6 @@ background-color: white;
     .footer{
         margin-left: 50px !important;
         margin-right: 50px !important;
-        height: 10vh;
 
         img{
             width: 10%px !important;
