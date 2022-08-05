@@ -17,5 +17,9 @@ export class HeaderComponent implements OnInit {
   openDropDown(){
       this.status = !this.status;
   }
-
+  routeToSection(route){
+   window.location.href = route;
+    this.status = false;
+  
+  }
 }
