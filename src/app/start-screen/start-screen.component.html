@@ -9,10 +9,10 @@
 
 
                 <button (click)="navigatetoSection()"
-             (mouseout)="stopAnimation()">
+                (mouseover)="mouseovered=true" (mouseleave)="mouseovered=false" [ngClass]="{'button-down': mouseovered}" >
                 
                     View my Work
-                    <img class="rotate" [ngClass]="arrow ?  'rotate' : 'reset-rotation'" src="assets/img/greeting/kindpng_736252.png">
+                    <img src="assets/img/greeting/kindpng_736252.png">
                 </button>
                 <!-- [ngClass]="angularState ? 'd-none' : 'container'" -->
 

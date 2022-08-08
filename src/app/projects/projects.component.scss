@@ -43,22 +43,7 @@
 
 
 
-    .form-container{
-        animation:shrinkorGrow 1s forwards;
-    }
-        
-    @keyframes shrinkorGrow{
 
-        0%{
-            transform:scale(1);
-        }
-
-
-        100%{
-            transform:scale(1.5);
-        }
-
-    }
     .d-none{
         display: none;
         }
@@ -67,15 +52,6 @@
         .dissapear{
             display: none;
             animation: fadeout 0.5s forwards;
-        }
-@keyframes fadeout{
-
-
-
-    100%{
-        opacity: 0;
-        display: none;
-    }
 
 
 }
@@ -85,7 +61,17 @@
     }
 
 
+// @keyframes fadein{
+//     from {
+//         opacity: 0;
+//         // transform:scale(1);
+//     }
+//     to {
+//         opacity: 1;
+//         // transform:scale(1.5);
 
+//     }
+// }
 
 // .imgProjects { // image__img
 //     height: 320px;
@@ -142,22 +128,9 @@
     height: 300px;
     width: 390px;
     margin: 20px;
-    animation: show 0.5s ease-in forwards ;
+    animation: fadein 0.5s ease-in forwards ;
   }
-  @keyframes show{
-    0%{
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    50%{
-        // transform: scale(15px);
-
-    }
-
-    100%{
-        opacity: 1;
-    }
-  }
+ 
 
 
 
@@ -308,9 +281,14 @@
 
 
 @media (max-width: 480px) {
+    .projects-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 .project-button{
-    font-size: 15px;
-    width: 100px;
+    font-size: 14.5px;
+    width: 80px;
     
 }
 
