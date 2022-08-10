@@ -1,6 +1,5 @@
 .block {
     min-height: 100vh;
-    background-color: #000000;
 }
 
 .container {
@@ -31,6 +30,7 @@
 
 .bubbles span:nth-child(even) {
     background: #ff2d75;
+    
     box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
 }
 
@@ -46,7 +46,6 @@
 
 .title-container {
     position: absolute;
-    background-color: #000000;
     z-index: 1;
     top: 50%;
     left: 50%;

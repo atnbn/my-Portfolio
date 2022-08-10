@@ -3,7 +3,7 @@ header {
     border-bottom: 3px solid #fa2759;
     right: 0;
     left: 0;
-    background-color: #000;
+    background-color: #151515;
     z-index: 12;
     position: sticky;
     top: 0;
@@ -36,7 +36,7 @@ header {
     }
 }
 .margin .links {
-    margin-left: 20px;
+    // margin-left: 20px;
 }
 
 .dropdown {
@@ -122,7 +122,7 @@ img {
 
 @media (max-width: 1000px) {
     .margin {
-        margin-left: 10px;
+        // margin-left: 10px;
         margin-right: 0;
 
          
@@ -151,7 +151,7 @@ img {
         .dropdown {
             position: relative;
         }
-
+     
         .dropdown-menu {
             position: absolute;
             left: 0;
@@ -191,4 +191,7 @@ img {
         padding-left: 10px;
         padding-right: 10px;
     }
+}
+.mr{
+    margin-right: 5px;
 }

@@ -1,6 +1,6 @@
 .margin{
     
-background-color: white;
+background-color: #303030;
 }
 
 
@@ -10,11 +10,12 @@ background-color: white;
     height: 10vh;
     align-items: center;
     margin-left: 160px;
+    color: white;
 
     a{
         font-size: 18px;
         text-decoration: none;
-        color : gray; 
+        color : #c6c6c6; 
     }
     img{
         margin-left: 70px;
@@ -22,9 +23,28 @@ background-color: white;
         height: 55px;
         width: 55px;
         object-fit: contain;
+
+        // &:hover{
+        //     cursor: pointer;
+        //     animation: bigger 1s forwards ;
+        // }
     }
+
 }
 
+.big{
+    transform: scale(1.1)    v ;
+
+}
+@keyframes bigger{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+
+}
 
 @media (max-width :900px){
 
