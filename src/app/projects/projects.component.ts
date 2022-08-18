@@ -17,7 +17,8 @@ export class ProjectsComponent implements OnInit {
   opacity2 : boolean  = false;
   opacity3 : boolean  = false;
   opacity4 : boolean  = false;
-
+  opacity5 : boolean  = false;
+  
   jsState : boolean = false;
   angularState : boolean = false;
   shrink : boolean = false;

@@ -77,4 +77,25 @@
             </div>
         </div>
     </div>
+
+    <div    data-aos="fade-in" [ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity5=true" (mouseout)="opacity5=false">
+        <!-- Fifth Container-->
+        <img class="imgProjects"  src="assets/img/projects/pexels-karsten-madsen-18105.png">
+        <div [ngClass]="opacity5? 'overlay' : 'd-none'"> </div>
+        <div class="middle">
+            <div class="text">
+                <p class="hover-title">Kanban Board</p>
+                <p class="hover-text">Js based Ticket Managment System</p>
+                <a  target="_blank" href="https://buenyamin-altan.developerakademie.com/Kanban-/index.html">
+                    <button class="img-button">Try it</button>
+                </a>
+                    
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 </div>
