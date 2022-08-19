@@ -31,6 +31,13 @@ body{
 @media(max-width:900px){
     body{
         background-color: #1a1a1a ;
+    }
+}
 
+
+@media(max-height:900px){
+    body{
+        background-color: #1a1a1a ;
+        background-image: linear-gradient( #000000 16%, #1a1a1a 34%, #000000);
     }
 }

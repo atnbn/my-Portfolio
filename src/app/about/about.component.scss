@@ -5,8 +5,8 @@
 .about {
    margin-left: 15%;
    margin-right: 15%;
+   margin-bottom: 400px;
     padding-bottom: 30px;
-    height: 100vh;
     color: white;
 
     .first-headline {
@@ -23,6 +23,7 @@
         margin-right: 100px;
         margin-top: 15px;
         object-fit: cover;
+        object-position: 50% 0%;
     }
 
     .text-headline {
@@ -40,6 +41,7 @@
     p {
         font-size: 21px;
         font-weight: 100;
+        color: #fff;
     }
 
     hr {
@@ -89,10 +91,11 @@
 
 
 
-@media (max-height: 1000px){
-.about-container{
-    height: fit-content;
-}
+@media (max-height: 1100px){
+    .about{
+        margin-bottom: 160px;
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -100,7 +103,6 @@
         margin: 0;
         margin-left: 15%;
         margin-right: 15%;
-        height: fit-content;
     }
     
     .about-container {
