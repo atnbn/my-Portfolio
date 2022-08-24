@@ -1,37 +1,27 @@
 <div id="contactme" class="contact-container">
-
   <div class="contact">
     <h2  data-aos="fade-in" data-aos-duration="1000">Contact me</h2>
     <p  data-aos="fade-in" data-aos-duration="1000">Get in touch via the form below, or by emailing <a href="mailto:altan.bnm@gmail.com">altan.bnm@gmail.com</a>
     </p>
-
     <form ngNoForm action="/send_mail.php" method="POST"
       accept-charset="UTF-8">
-
       <div class="contact-formular">
-
-
-
         <div class="input-box" data-aos="fade-in" data-aos-duration="1000" >
           <input type="text" name="name" required="required">
           <span>Name</span>
         </div>
-
         <div class="input-box" data-aos="fade-in" data-aos-duration="1000" >
           <input type="email" name="email"  required="required" >
           <span>Email</span>
         </div>
-
         <div class="input-box" data-aos="fade-in" data-aos-duration="1000" >
             <!-- <input type="message" name="message"  required="required" class="textarea"> -->
             <textarea type="message" name="message" required="required" class="textarea" placeholder="Message"></textarea>
           </div>
-
           <div class="button-con" data-aos="fade-in" data-aos-duration="1000">
-            <button type="submit" class="contact-button">Send</button>
+            <!-- (click)="navigateToSite()"  -->
+            <button type="submit"  required="required"  class="contact-button">Send</button>
           </div>
       </div>
         </form>
-
-
 </div>

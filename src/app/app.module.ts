@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { StartScreenComponent } from './start-screen/start-screen.component';
+import { SuccesComponent } from './succes/succes.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { StartScreenComponent } from './start-screen/start-screen.component';
     ImprintComponent,
     DataProtectionComponent,
     StartScreenComponent,
+    SuccesComponent,
   ],
   imports: [
     BrowserModule,

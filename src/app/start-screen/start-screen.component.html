@@ -1,21 +1,15 @@
 <div id="startScreen" class="block">
-
-
     <div class="container">
         <div class="title-container">
             <h1 class="title">Hello, I´m <span>Bünyamin Altan</span> <br>
                 I´m a Front End develop<span style="color: #4fc3dc;">e</span>r</h1>
             <div class="button-con">
-
-
-                <button (click)="navigatetoSection()"
-                (mouseover)="mouseovered=true" (mouseleave)="mouseovered=false" [ngClass]="{'button-down': mouseovered}" >
-                
+                <button (click)="navigatetoSection()" (mouseover)="mouseovered=true" (mouseleave)="mouseovered=false"
+                    [ngClass]="{'button-down': mouseovered}">
                     View my Work
-                    <img src="assets/img/greeting/kindpng_736252.png">
+                    <img src="assets/img/profile/kindpng_736252.png">
                 </button>
                 <!-- [ngClass]="angularState ? 'd-none' : 'container'" -->
-
             </div>
         </div>
         <div class="bubbles">
@@ -67,12 +61,9 @@
             <span style="--i:23;"></span>
             <span style="--i:56;"></span>
             <span style="--i:54;"></span>
-
         </div>
     </div>
 </div>
-
-
 <app-header></app-header>
 <app-about></app-about>
 <app-projects></app-projects>

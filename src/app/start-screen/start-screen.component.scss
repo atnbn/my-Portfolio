@@ -30,7 +30,7 @@
 
 .bubbles span:nth-child(even) {
     background: #ff2d75;
-    
+
     box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
 }
 
@@ -88,47 +88,38 @@ button {
     display: flex;
     align-items: center;
 
-
-
-    img{
+    img {
         transition: 0.5s;
     }
 
-
     &:hover {
         background-color: #fa2759;
-   
-        
-    }
-  
-}
-.button-down{
-    img{
-        transform: rotate(90deg)
     }
 }
-@keyframes rotate{
-    0%{
+.button-down {
+    img {
+        transform: rotate(90deg);
+    }
+}
+@keyframes rotate {
+    0% {
         transform: rotate(0deg);
     }
 
-    100%{
+    100% {
         transform: rotate(90deg);
     }
-
 }
 
-@keyframes rotateback{
-    0%{
+@keyframes rotateback {
+    0% {
         transform: rotate(90deg);
     }
 
-    100%{
+    100% {
         transform: rotate(0deg);
     }
-
 }
-
 
 @media (max-width: 1920px) {
     .title {

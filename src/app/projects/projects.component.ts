@@ -22,25 +22,36 @@ export class ProjectsComponent implements OnInit {
   jsState : boolean = false;
   angularState : boolean = false;
   shrink : boolean = false;
-  grow : boolean = false;
-  showJsProjects(){
-    this.jsState = this.jsState = false;
-    this.angularState = true;
-    console.log('Showjsprojects')
-  }
+  glow : boolean = true;
+  glow1 : boolean = false;
+  glow2 : boolean = false;
 
-  showAngularProjects(){
-    this.angularState = false;
-    this.jsState = true;
-    this.shrink = true;
-  }
 
   showAllProjects(){
     this.jsState = false;
     this.angularState = false;
     this.shrink = false;
+    this.glow = true;
+    this.glow1 = false;
+    this.glow2 = false;
   }
   
+  showAngularProjects(){
+    this.angularState = false;
+    this.jsState = true;
+    this.shrink = true;
+    this.glow = false;
+    this.glow1 = true;
+    this.glow2 = false;
+    
+  }
+  showJsProjects(){
+    this.jsState = this.jsState = false;
+    this.angularState = true;
+    this.glow = false;
+    this.glow1 = false;
+    this.glow2 = true;
+  }
 
 
 }

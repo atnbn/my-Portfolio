@@ -1,101 +1,88 @@
 <div id="projects" class="projects-container">
-<div class="margin">
-    <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> My work</h2>
-
-    <div class="projects-button">
-        <button  data-aos="fade-up" class="project-button" (click)="showAllProjects()">All</button>
-        <button  data-aos="fade-up" class="project-button" (click)="showAngularProjects()">Angular</button>
-        <button  data-aos="fade-up" class="project-button" (click)="showJsProjects()">Java Script</button>
-    </div>
-
-    <div class="first-con">
-
-   
-
-            <div     data-aos="fade-in"  data-aos-duration="200"  [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity1=true" (mouseout)="opacity1=false">
+    <div class="margin">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> My work</h2>
+        <div class="projects-button">
+            <button data-aos="fade-up" class="project-button" [ngClass]="glow ? 'active' : 'project-button'"
+                (click)="showAllProjects()">All</button>
+            <button data-aos="fade-up" class="project-button" [ngClass]="glow1 ? 'active' : 'project-button'"
+                (click)="showAngularProjects()">Angular</button>
+            <button data-aos="fade-up" class="project-button" [ngClass]="glow2 ? 'active' : 'project-button'"
+                (click)="showJsProjects()">Java Script</button>
+        </div>
+        <div class="first-con">
+            <div data-aos="fade-in" data-aos-duration="200" [ngClass]="angularState ? 'd-none' : 'container'"
+                (mouseover)="opacity1=true" (mouseout)="opacity1=false">
                 <!-- First Container-->
                 <div [ngClass]="opacity1? 'overlay' : 'd-none'"> </div>
-                <img src="assets/img/computer-3542771_640.png"  class="imgProjects"
-                    style="width:100%">
+                <img src="assets/img/computer-3542771_640.png" class="imgProjects" style="width:100%">
                 <div class="middle">
                     <div class="text">
                         <p class="hover-title">Ring of fire</p>
                         <p class="hover-text">Angular - based drunking game</p>
-                        <a target="_blank"   href="https://ring-of-fire-2c176.web.app"><button class="img-button">Try it</button></a>
+                        <a target="_blank" href="https://ring-of-fire-2c176.web.app"><button class="img-button">Try
+                                it</button></a>
                     </div>
                 </div>
             </div>
-
-
-            <div      data-aos="fade-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity2=true" (mouseout)="opacity2=false">
+            <div data-aos="fade-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity2=true"
+                (mouseout)="opacity2=false">
                 <!-- Second Container-->
-                <img class="imgProjects"  src="assets/img/computer-2170392_640.png">
+                <img class="imgProjects" src="assets/img/computer-2170392_640.png">
                 <div [ngClass]="opacity2? 'overlay' : 'd-none'"> </div>
                 <div class="middle">
                     <div class="text">
                         <p class="hover-title">El - Polo loco</p>
-                        <p class="hover-text">Js  - based 2D game</p>
-                        <a  target="_blank" href="http://buenyamin-altan.developerakademie.com/Modul%2011/index.html">
+                        <p class="hover-text">Js - based 2D game</p>
+                        <a target="_blank" href="http://buenyamin-altan.developerakademie.com/Modul%2011/index.html">
                             <button class="img-button">Try it</button>
-
                         </a>
                     </div>
                 </div>
             </div>
-
-
-                <div     data-aos="fade-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity3=true" (mouseout)="opacity3=false">
+            <div data-aos="fade-in" [ngClass]="angularState ? 'd-none' : 'container'" (mouseover)="opacity3=true"
+                (mouseout)="opacity3=false">
                 <!-- Thrid Container-->
-                <img class="imgProjects" [ngClass]="jsState ? 'd-none' : 'imgProjects'" src=" assets/img/catch-464737_1280.png">
+                <img class="imgProjects" [ngClass]="jsState ? 'd-none' : 'imgProjects'"
+                    src=" assets/img/catch-464737_1280.png">
                 <div [ngClass]="opacity3? 'overlay' : 'd-none'"> </div>
                 <div class="middle">
                     <div class="text">
                         <p class="hover-title">My Portfolio</p>
                         <p class="hover-text">This Site was created with Angular</p>
                         <a href="#">
-
                             <button class="img-button">Try it</button>
                         </a>
                     </div>
                 </div>
             </div>
-
-   
-
-    <div    data-aos="fade-in" [ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity4=true" (mouseout)="opacity4=false">
-        <!-- Fourth Container-->
-        <img class="imgProjects"  src="assets/img/laptop-2443049_640.png">
-        <div [ngClass]="opacity4? 'overlay' : 'd-none'"> </div>
-        <div class="middle">
-            <div class="text">
-                <p class="hover-title">Pokedex</p>
-                <p class="hover-text">API based library to check Pokemons from the famous Nintendo game.</p>
-                <a  target="_blank" href="https://buenyamin-altan.developerakademie.com/Pokedex/index.html">
-                    <button class="img-button">Try it</button>
-                </a>
-                    
+            <div data-aos="fade-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity4=true"
+                (mouseout)="opacity4=false">
+                <!-- Fourth Container-->
+                <img class="imgProjects" src="assets/img/laptop-2443049_640.png">
+                <div [ngClass]="opacity4? 'overlay' : 'd-none'"> </div>
+                <div class="middle">
+                    <div class="text">
+                        <p class="hover-title">Pokedex</p>
+                        <p class="hover-text">API based library to check Pokemons from the famous Nintendo game.</p>
+                        <a target="_blank" href="https://buenyamin-altan.developerakademie.com/Pokedex/index.html">
+                            <button class="img-button">Try it</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-in" [ngClass]="jsState ? 'd-none' : 'container'" (mouseover)="opacity5=true"
+                (mouseout)="opacity5=false">
+                <!-- Fifth Container-->
+                <img class="imgProjects" src="assets/img/projects/pexels-karsten-madsen-18105.png">
+                <div [ngClass]="opacity5? 'overlay' : 'd-none'"> </div>
+                <div class="middle">
+                    <div class="text">
+                        <p class="hover-title">Kanban Board</p>
+                        <p class="hover-text">Js based Ticket Managment System</p>
+                        <a target="_blank" href="https://buenyamin-altan.developerakademie.com/Kanban-/index.html">
+                            <button class="img-button">Try it</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div    data-aos="fade-in" [ngClass]="jsState ? 'd-none' : 'container'"  (mouseover)="opacity5=true" (mouseout)="opacity5=false">
-        <!-- Fifth Container-->
-        <img class="imgProjects"  src="assets/img/projects/pexels-karsten-madsen-18105.png">
-        <div [ngClass]="opacity5? 'overlay' : 'd-none'"> </div>
-        <div class="middle">
-            <div class="text">
-                <p class="hover-title">Kanban Board</p>
-                <p class="hover-text">Js based Ticket Managment System</p>
-                <a  target="_blank" href="https://buenyamin-altan.developerakademie.com/Kanban-/index.html">
-                    <button class="img-button">Try it</button>
-                </a>
-                    
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-</div>

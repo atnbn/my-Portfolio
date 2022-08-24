@@ -4,27 +4,20 @@
             <img src="assets/img/LogoMakr-6Wx4ce.png">
 
         </a> -->
-
-    <img  (click)="openDropDown()" class="dropdown" id="drop-down" src="assets/img/LogoMakr-9Zxlo5.png">
-
-
-    <!-- Dropdown Responsiv -->
-    <div class="d-none" [ngClass]="status ? 'drop-down' : 'd-none'">
-        <a class="fullscreen-link middle" (click)="routeToSection('#startScreen')">HOME</a>
-        <a class="fullscreen-link middle" (click)="routeToSection('#about')">ABOUT</a>
-        <a class="fullscreen-link middle" (click)="routeToSection('#projects')">PORTFOLIO</a>
-        <a class="fullscreen-link middle" (click)="routeToSection('#contactme')">CONTACT</a>
-
+        <img (click)="openDropDown()" class="dropdown" id="drop-down" src="assets/img/LogoMakr-9Zxlo5.png">
+        <!-- Dropdown Responsiv -->
+        <div class="d-none" [ngClass]="status ? 'drop-down' : 'd-none'">
+            <a class="fullscreen-link middle" (click)="routeToSection('#startScreen')">HOME</a>
+            <a class="fullscreen-link middle" (click)="routeToSection('#about')">ABOUT</a>
+            <a class="fullscreen-link middle" (click)="routeToSection('#projects')">PORTFOLIO</a>
+            <a class="fullscreen-link middle" (click)="routeToSection('#contactme')">CONTACT</a>
+        </div>
+        <!-- Header Fullscreen -->
+        <div class="links">
+            <a class="fullscreen-link mr" href="#startScreen">HOME</a>
+            <a class="fullscreen-link middle" href="#about">ABOUT</a>
+            <a class="fullscreen-link middle" href="#projects">PORTFOLIO</a>
+            <a class="fullscreen-link middle" href="#contactme">CONTACT</a>
+        </div>
     </div>
-    
-        
- 
- <!-- Header Fullscreen -->
-    <div class="links">
-        <a class="fullscreen-link mr" href="#startScreen">HOME</a>
-        <a class="fullscreen-link middle" href="#about">ABOUT</a>
-        <a class="fullscreen-link middle" href="#projects">PORTFOLIO</a>
-        <a class="fullscreen-link middle" href="#contactme">CONTACT</a>
-    </div>
-</div>
 </header>
