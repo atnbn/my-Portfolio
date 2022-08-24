@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'altan.bnm@gmail.com';
-$redirect = 'https://xn--bnyamin-altan-wob.com/index.html';
+$redirect = 'https://xn--bnyamin-altan-wob.com/success.html';
 
 ########### CONFIG END ###########
 
