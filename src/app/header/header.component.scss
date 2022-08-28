@@ -76,7 +76,6 @@ img {
 
 // Animation starts here
 
-
 .fullscreen-link:active {
     color: #fa2759;
 }
@@ -88,8 +87,6 @@ img {
 .fullscreen-link:hover:before {
     opacity: 1;
 }
-
-
 
 // Animation ends here
 
@@ -125,7 +122,6 @@ img {
         // margin-left: 10px;
         margin-right: 0;
 
-         
         .dropdown {
             height: 30px;
             display: flex;
@@ -151,7 +147,7 @@ img {
         .dropdown {
             position: relative;
         }
-     
+
         .dropdown-menu {
             position: absolute;
             left: 0;
@@ -178,8 +174,12 @@ img {
 
     .drop-down {
         display: flex;
+        width: 200px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         top: 50px;
-        left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
         position: absolute;
         background: black;
         flex-direction: column;
@@ -192,6 +192,6 @@ img {
         padding-right: 10px;
     }
 }
-.mr{
+.mr {
     margin-right: 5px;
 }
