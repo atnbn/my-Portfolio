@@ -14,6 +14,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { StartScreenComponent } from './start-screen/start-screen.component';
 import { SuccesComponent } from './succes/succes.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SuccesComponent } from './succes/succes.component';
     DataProtectionComponent,
     StartScreenComponent,
     SuccesComponent,
+    LegalNoticeComponent,
   ],
   imports: [
     BrowserModule,
