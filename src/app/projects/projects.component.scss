@@ -177,8 +177,8 @@
 .img-button {
     color: #fa2759;
     background-color: white;
-    height: 65px;
-    width: 120px;
+    height: 50px;
+    width: 110px;
     font-size: 18px;
     margin: 3px;
     border: 2px solid #fa2759;
@@ -193,6 +193,11 @@
     &:focus {
         background-color: white !important;
     }
+}
+
+
+.buttons{
+    display: flex;
 }
 //
 
