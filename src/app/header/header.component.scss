@@ -45,6 +45,7 @@ header {
 .middle {
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .drop-down {
     display: none;
@@ -57,6 +58,7 @@ img {
     min-height: 30px;
     max-height: 60px;
     cursor: pointer;
+    transform: scaleX(-1);
 }
 
 .d-none {
@@ -119,7 +121,7 @@ img {
 
 @media (max-width: 1000px) {
     .margin {
-        // margin-left: 10px;
+        margin-left: 4%;
         margin-right: 0;
 
         .dropdown {

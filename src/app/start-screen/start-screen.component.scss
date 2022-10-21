@@ -132,14 +132,18 @@ button {
         font-size: 18px;
         width: 150px;
     }
-}
-
-
-
-@media ( max-width: 400px)
-{
     .title-container{
         width: 90%;
-        
+    }
+}
+
+@media ( max-width: 480px)
+{
+    
+    .title{
+        font-size:32px
+    }
+    button{
+        font-size: 18px;
     }
 }
